@@ -1,0 +1,21 @@
+.fiza-1{
+    font-family: "Boldonse", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.fiza-2{
+     font-family: "Story Script", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.f-hover:hover{
+  color: rgb(241, 174, 18) !important;
+}
+
+.fn-1{
+   transform: rotate(); 
+    transition: transform 0.5s ease-in-out;
+}
+.fn-1:hover {
+  transform: rotate(360deg);
+}
