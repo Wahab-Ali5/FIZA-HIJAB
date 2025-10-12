@@ -19,3 +19,9 @@
 .fn-1:hover {
   transform: rotate(360deg);
 }
+.anchor1{
+  color: black;
+}
+.anchor1:hover{
+  color: rgb(241, 174, 18) !important;
+}
