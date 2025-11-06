@@ -1,42 +1,57 @@
-.fiza-1{
-    font-family: "Boldonse", system-ui;
+.fiza-1 {
+  font-family: "Boldonse", system-ui;
   font-weight: 400;
   font-style: normal;
 }
-.fiza-2{
-     font-family: "Story Script", sans-serif;
+.fiza-2 {
+  font-family: "Story Script", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
-.f-hover:hover{
+.f-hover:hover {
   color: rgb(241, 174, 18) !important;
 }
 
-.fn-1{
-   transform: scale(); 
-    /* transition: transform 0.5s ease-in-out; */
+.fn-1 {
+  transition: transform 0.4s ease-in-out;
 }
 .fn-1:hover {
-  transform: scale(1.1)
-  /* border:2px solid black; */
+  transform: scale(1.1);
 }
-.anchor1{
+
+.anchor1 {
   color: black;
 }
-.anchor1:hover{
+.anchor1:hover {
   color: rgb(241, 174, 18) !important;
 }
-.backgrondimg{
-background-image: url("./360_F_658213577_ayMyHpd9K2on301GWB0DzeOyxWM0XLiX-removebg-preview.png");
+
+.backgroundimg {
+  background-image: url("./360_F_658213577_ayMyHpd9K2on301GWB0DzeOyxWM0XLiX-removebg-preview.png");
   background-repeat: no-repeat;
-  background-size:250px;
+  background-size: 250px;
   background-attachment: fixed;
 }
-.niqabtext{
+
+.niqabtext {
   font-size: 20px;
 }
-.footermin{
-  color: white;
-  background-color: black;
-  width: 100%; 
+.footer {
+  background-color: #000;
+  color: #f8f9fa;
+  width: 100%;
 }
+
+.footer a:hover {
+  color: rgb(241, 174, 18) !important;
+}
+
+.footer img {
+  filter: brightness(90%);
+}
+
+.footer hr {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+

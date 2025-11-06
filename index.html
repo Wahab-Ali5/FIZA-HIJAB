@@ -1,68 +1,52 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
   <title>FIZA HIJAB</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-  <link rel="shortcut icon" href="./Screenshot 2025-09-05 185003.png" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="./image/fizahijab.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- firebase -->
+  <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-database.js"></script>
 </head>
 
 <body>
-  <!-- ----------------------------------------header start---------------------------------------------------- -->
-  <!-- navber start -->
-  <nav id="nav" class=" backgrondimg navbar bg-body-tertiary p-4 border-bottom shadow p-3 mb-5 bg-body-tertiary rounded fixed-top ">
-
-    <div class="container-fluid row  ">
-      <div class="col-lg-3 col-12 fs-2 ">
-        <a target="_blank" href="https://www.facebook.com/share/19aLzdrDQo/"><i
-            class="fa-brands d-inline-block fa-facebook text-danger-emphasis f-hover"></i></a>
-        <a target="_blank" href="#"><i
-            class="fa-brands d-inline-block fa-instagram text-danger-emphasis f-hover"></i></a>
-        <a target="_blank" href="#"><i class="fa-brands d-inline-block fa-tiktok  text-danger-emphasis f-hover"></i></a>
-        <a target="_blank" href="#"><i
-            class="fa-brands d-inline-block fa-whatsapp  text-danger-emphasis f-hover"></i></a>
+  <!-- Navbar -->
+  <nav class="navbar bg-body-tertiary p-4 border-bottom shadow mb-5 fixed-top">
+    <div class="container-fluid row">
+      <div class="col-lg-3 col-12 fs-2">
+        <a href="https://www.facebook.com/fizahijab"><i class="fa-brands fa-facebook  f-hover  text-danger-emphasis"></i></a>
+        <a href="https://www.instagram.com/fiza_hijab/"><i class="fa-brands fa-instagram  f-hover  text-danger-emphasis"></i></a>
+        <a href="https://www.tiktok.com/@fizahijab"><i class="fa-brands fa-tiktok f-hover text-danger-emphasis"></i></a>
+        <a href="https://wa.me/923101179203"><i class="fa-brands fa-whatsapp  f-hover  text-danger-emphasis"></i></a>
       </div>
-      <span class="navbar-brand text-warning col-12 col-lg-5 ms-auto display-1 fiza-1 fs-2">FIZA <span
-          class="text-danger-emphasis fiza-1">HIJAB</span></span>
-
-      <div class="col-lg-3 col-12  text-decoration-none   ">
-  
-        <a class="text-danger-emphasis f-hover   " href="./niqab/niqab.html"><p class="niqabtext">NIQAP SECTION</p></a>
-        <a class=" text-danger-emphasis f-hover " href="./IRANI CHADER/idani.html"><p class="niqabtext">IRANI CHADER SECTION</p></a>
+      <span class="navbar-brand text-warning col-12 col-lg-5 ms-auto fs-2">
+        FIZA <span class="text-danger-emphasis">HIJAB</span>
+      </span>
+      <div class="col-lg-3 col-12">
+        <a class="text-danger-emphasis" href="./naqab/naqab.html">NIQAP SECTION</a> |
+        <a class="text-danger-emphasis" href="./irani chader/iranichader.html">IRANI CHADER SECTION</a>
       </div>
     </div>
-
   </nav>
-  
-  <!-- navber end -->
-  
-  <!-- ----------------------------------------header end---------------------------------------------------- -->
-  
-  <!-- ----------------------------------------body start---------------------------------------------------- -->
-  
-  <!-- carousel start -->
-  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Carousel -->
+  <div id="carouselExampleSlidesOnly" class="carousel slide mt-5 pt-5" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="./mimg1.png" class="d-block w-100" alt="...">
+        <img src="https://blackcamels.com.pk/cdn/shop/collections/collection_banner-06.jpg?v=1747836025" class="d-block w-100" alt="...">
       </div>
     </div>
   </div>
-  <!-- carousel end -->
-  <div class="h1fast1 text-danger-emphasis   mt-5 ">
+<div class="h1fast1 text-danger-emphasis   mt-5 ">
     <h1>
       <marquee class="text-center"  scrollamount="3" behavior="slide" direction="up"><span class="text-warning">PIRNTED  NAMAZ</span> CHADER
       </marquee>
@@ -79,7 +63,7 @@
     <p class="card-text">FULL COVERAGE NAMAZ CHADDER <br>
     -with Sleeves and Adjustable Naqab</p>
     <p><del class="text-danger">Rs.3,000.00 PKR</del>  Rs.1,500.00 PKR</p>
-    <a href="#" class="btn btn-outline-warning btn-lg ">ADD TO CARD</a>
+    <a href="#" class="btn btn-outline-warning btn-lg ">ADD TO CART</a>
   </div>
 </div>
   <!-- end card -->
@@ -91,7 +75,7 @@
     <p class="card-text">FULL COVERAGE NAMAZ CHADDER <br>
     -with Sleeves and Adjustable Naqab</p>
     <p><del class="text-danger">Rs.3,000.00 PKR</del>  Rs.1,500.00 PKR</p>
-    <a href="#" class="btn btn-outline-warning btn-lg ">ADD TO CARD</a>
+    <a href="#" class="btn btn-outline-warning btn-lg ">ADD TO CART</a>
   </div>
 </div>
   <!-- end card -->
@@ -102,7 +86,7 @@
     <p class="card-text">FULL COVERAGE NAMAZ CHADDER <br>
     -with Sleeves and Adjustable Naqab</p>
     <p><del class="text-danger">Rs.3,000.00 PKR</del>  Rs.1,500.00 PKR</p>
-    <a href="#" class="btn btn-outline-warning btn-lg ">ADD TO CARD</a>
+   <a href="#" class="btn btn-outline-warning btn-lg">ADD TO CART</a>
   </div>
 </div>
   <!-- end card -->
@@ -113,7 +97,7 @@
     <p class="card-text">FULL COVERAGE NAMAZ CHADDER <br>
     -with Sleeves and Adjustable Naqab</p>
     <p><del class="text-danger">Rs.3,000.00 PKR</del>  Rs.1,500.00 PKR</p>
-    <a href="#" class="btn btn-outline-warning btn-lg ">ADD TO CARD</a>
+    <a href="#" class="btn btn-outline-warning btn-lg">ADD TO CART</a>
   </div>
 </div>
   <!-- end card -->
@@ -129,7 +113,7 @@
     <p class="card-text">FULL COVERAGE NAMAZ CHADDER <br>
     -with Sleeves and Adjustable Naqab</p>
     <p><del class="text-danger">Rs.3,000.00 PKR</del>  Rs.1,500.00 PKR</p>
-    <a href="#" class="btn btn-outline-warning btn-lg ">ADD TO CARD</a>
+    <a href="#" class="btn btn-outline-warning btn-lg">ADD TO CART</a>
   </div>
 </div>
   <!-- end card -->
@@ -141,7 +125,7 @@
     <p class="card-text">FULL COVERAGE NAMAZ CHADDER <br>
     -with Sleeves and Adjustable Naqab</p>
     <p><del class="text-danger">Rs.3,000.00 PKR</del>  Rs.1,500.00 PKR</p>
-    <a href="#" class="btn btn-outline-warning btn-lg ">ADD TO CARD</a>
+    <a href="#" class="btn btn-outline-warning btn-lg">ADD TO CART</a>
   </div>
 </div>
   <!-- end card -->
@@ -152,7 +136,7 @@
     <p class="card-text">FULL COVERAGE NAMAZ CHADDER <br>
     -with Sleeves and Adjustable Naqab</p>
     <p><del class="text-danger">Rs.3,000.00 PKR</del>  Rs.1,500.00 PKR</p>
-    <a href="#" class="btn btn-outline-warning btn-lg ">ADD TO CARD</a>
+     <a href="#" class="btn btn-outline-warning btn-lg">ADD TO CART</a>
   </div>
 </div>
   <!-- end card -->
@@ -163,7 +147,7 @@
     <p class="card-text">FULL COVERAGE NAMAZ CHADDER <br>
     -with Sleeves and Adjustable Naqab</p>
     <p><del class="text-danger">Rs.3,000.00 PKR</del>  Rs.1,500.00 PKR</p>
-    <a href="#" class="btn btn-outline-warning btn-lg ">ADD TO CARD</a>
+    <a href="#" class="btn btn-outline-warning btn-lg">ADD TO CART</a>
   </div>
 </div>
   <!-- end card -->
@@ -187,7 +171,7 @@
     <p class="card-text">FULL COVERAGE NAMAZ CHADDER <br>
     -with Sleeves and Adjustable Naqab</p>
     <p><del class="text-danger">Rs.1,500.00 PKR</del>  Rs.1,000.00 PKR</p>
-    <a href="#" class="btn btn-outline-warning btn-lg ">ADD TO CARD</a>
+    <a href="#" class="btn btn-outline-warning btn-lg">ADD TO CART</a>
   </div>
 </div>
   <!-- end card -->
@@ -200,7 +184,7 @@
     <p class="card-text">FULL COVERAGE NAMAZ CHADDER <br>
     -with Sleeves and Adjustable Naqab</p>
     <p><del class="text-danger">Rs.1,500.00 PKR</del>  Rs.1,000.00 PKR</p>
-    <a href="#" class="btn btn-outline-warning btn-lg ">ADD TO CARD</a>
+   <a href="#" class="btn btn-outline-warning btn-lg">ADD TO CART</a>
   </div>
 </div>
   <!-- end card -->
@@ -212,7 +196,7 @@
     <p class="card-text">FULL COVERAGE NAMAZ CHADDER <br>
     -with Sleeves and Adjustable Naqab</p>
     <p><del class="text-danger">Rs.1,500.00 PKR</del>  Rs.1,000.00 PKR</p>
-    <a href="#" class="btn btn-outline-warning btn-lg ">ADD TO CARD</a>
+    <a href="#" class="btn btn-outline-warning btn-lg">ADD TO CART</a>
   </div>
 </div>
   <!-- end card -->
@@ -224,7 +208,7 @@
     <p class="card-text">FULL COVERAGE NAMAZ CHADDER <br>
     -with Sleeves and Adjustable Naqab</p>
     <p><del class="text-danger">Rs.1,500.00 PKR</del>  Rs.1,000.00 PKR</p>
-    <a href="#" class="btn btn-outline-warning btn-lg ">ADD TO CARD</a>
+    <a href="#" class="btn btn-outline-warning btn-lg">ADD TO CART</a>
   </div>
 </div>
   <!-- end card -->
@@ -240,10 +224,10 @@
     <p class="card-text">FULL COVERAGE NAMAZ CHADDER <br>
     -with Sleeves and Adjustable Naqab</p>
     <p><del class="text-danger">Rs.1,500.00 PKR</del>  Rs.1,000.00 PKR</p>
-    <a href="#" class="btn btn-outline-warning btn-lg ">ADD TO CARD</a>
+    <a href="#" class="btn btn-outline-warning btn-lg ">ADD TO CART</a>
   </div>
 </div>
-  <!-- end card -->
+  <!-- end card --T
   
   
   <!-- 6 card  -->
@@ -253,7 +237,7 @@
     <p class="card-text">FULL COVERAGE NAMAZ CHADDER <br>
     -with Sleeves and Adjustable Naqab</p>
     <p><del class="text-danger">Rs.1,500.00 PKR</del>  Rs.1,000.00 PKR</p>
-    <a href="#" class="btn btn-outline-warning btn-lg ">ADD TO CARD</a>
+    <a href="#" class="btn btn-outline-warning btn-lg ">ADD TO CART</a>
   </div>
 </div>
   <!-- end card -->
@@ -265,7 +249,7 @@
     <p class="card-text">FULL COVERAGE NAMAZ CHADDER <br>
     -with Sleeves and Adjustable Naqab</p>
     <p><del class="text-danger">Rs.1,500.00 PKR</del>  Rs.1,000.00 PKR</p>
-    <a href="#" class="btn btn-outline-warning btn-lg ">ADD TO CARD</a>
+    <a href="#" class="btn btn-outline-warning btn-lg ">ADD TO CART</a>
   </div>
 </div>
   <!-- end card -->
@@ -277,7 +261,7 @@
     <p class="card-text">FULL COVERAGE NAMAZ CHADDER <br>
     -with Sleeves and Adjustable Naqab</p>
     <p><del class="text-danger">Rs.1,500.00 PKR</del>  Rs.1,000.00 PKR</p>
-    <a href="#" class="btn btn-outline-warning btn-lg ">ADD TO CARD</a>
+    <a href="#" class="btn btn-outline-warning btn-lg ">ADD TO CART</a>
   </div>
 </div>
   <!-- end card -->
@@ -300,7 +284,7 @@
     <p class="card-text">FULL COVERAGE NAMAZ CHADDER <br>
     -with Sleeves and Adjustable Naqab</p>
     <p><del class="text-danger">Rs.3,500.00 PKR</del>  Rs.2,500.00 PKR</p>
-    <a href="#" class="btn btn-outline-warning btn-lg ">ADD TO CARD</a>
+    <a href="#" class="btn btn-outline-warning btn-lg ">ADD TO CART</a>
   </div>
 </div>
   <!-- end card -->
@@ -311,7 +295,7 @@
     <p class="card-text">FULL COVERAGE NAMAZ CHADDER <br>
     -with Sleeves and Adjustable Naqab</p>
     <p><del class="text-danger">Rs.3,500.00 PKR</del>  Rs.2,500.00 PKR</p>
-    <a href="#" class="btn btn-outline-warning btn-lg ">ADD TO CARD</a>
+    <a href="#" class="btn btn-outline-warning btn-lg ">ADD TO CART</a>
   </div>
 </div>
   <!-- end card -->
@@ -322,7 +306,7 @@
     <p class="card-text">FULL COVERAGE NAMAZ CHADDER <br>
     -with Sleeves and Adjustable Naqab</p>
     <p><del class="text-danger">Rs.3,500.00 PKR</del>  Rs.2,500.00 PKR</p>
-    <a href="#" class="btn btn-outline-warning btn-lg ">ADD TO CARD</a>
+    <a href="#" class="btn btn-outline-warning btn-lg ">ADD TO CART</a>
   </div>
 </div>
   <!-- end card -->
@@ -333,34 +317,51 @@
     <p class="card-text">FULL COVERAGE NAMAZ CHADDER <br>
     -with Sleeves and Adjustable Naqab</p>
     <p><del class="text-danger">Rs.3,500.00 PKR</del>  Rs.2,500.00 PKR</p>
-    <a href="#" class="btn btn-outline-warning btn-lg ">ADD TO CARD</a>
+    <a href="#" class="btn btn-outline-warning btn-lg ">ADD TO CART</a>
     </div>
 </div>
   <!-- end card -->
 
-  <!-- ----------------------------------------body end  ---------------------------------------------------- -->
-  <!-- ----------------------------------------footer start  ---------------------------------------------------- -->
-  <div class="footermin container-fluid mt-5">
-    <div class="imgdiv"><img src="./fizahijab-removebg-preview.png" alt="">
-    <p class="p-2">EMAIL ADDRESS</p><p class="p-2">FizaHijab@mail.com</p>
-  </div>
-  </div>
-  
-  <!-- footer last start -->
-<div id="footer" class="container-fluid bg-black text-light lcolor">
-    <p class="lead">Copyright ©2025 All rights reserved | This template is made with <i class="fa-solid fa-heart"></i> <span class="light">by Colorlib.com</span></p>
-</div>
-<!-- footer last end -->
-  
-  
-  <script src="app.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
 
+ <!-- ---------------------------------------- Footer Start ---------------------------------------------------- -->
+<footer class="footer bg-black text-light mt-5 pt-5 pb-3 w-100">
+  <div class="container-fluid px-5">
+    <div class="row gy-4 align-items-center">
+
+      <!-- Logo & About -->
+      <div class="col-md-6 text-center text-md-start">
+        <img src="./image/fizahijab-removebg-preview.png" alt="Fiza Hijab Logo" class="img-fluid mb-3" style="max-width:160px;">
+        <p class="small">Fiza Hijab brings you elegant modest wear crafted with care and style — redefining confidence every day.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-6 text-center text-md-end">
+        <h5 class="text-warning mb-3 fiza-1">Quick Links</h5>
+        <ul class="list-unstyled mb-0">
+          <li><a href="index.html" class="text-light anchor1 f-hover text-decoration-none">Home</a></li>
+          <li><a href="./irani chader/iranichader.html" class="text-light anchor1 f-hover text-decoration-none">Irani Chadar</a></li>
+          <li><a href="./naqab/naqab.html" class="text-light anchor1 f-hover text-decoration-none">Naqab Collection</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <hr class="border-secondary mt-4 mb-3 w-100">
+
+  <div class="text-center pb-2">
+    <p class="mb-0 small">
+      ©2025 <span class="text-warning fiza-1">Fiza Hijab</span> — Made with 
+      <i class="fa-solid fa-heart text-danger"></i> by <span class="text-warning">Wahab</span>
+    </p>
+  </div>
+</footer>
+<!-- ---------------------------------------- Footer End ---------------------------------------------------- -->
+
+<!-- SweetAlert -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+ <script src="app.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>

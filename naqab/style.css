@@ -7,7 +7,8 @@
 .backgrondimg {
   background-image: url("./360_F_658213577_ayMyHpd9K2on301GWB0DzeOyxWM0XLiX-removebg-preview.png");
   background-repeat: no-repeat;
-  background-size: 250px;
+  background-size: contain;
+  background-position: center;
   background-attachment: fixed;
 }
 
@@ -16,7 +17,6 @@
 }
 
 .fn-1 {
-  transform: scale(1);
   transition: transform 0.3s ease-in-out;
 }
 
@@ -24,16 +24,6 @@
   transform: scale(1.05);
 }
 
-.card img {
-  height: 350px;
-  object-fit: cover;
-}
-
 .niqabtext {
   font-size: 20px;
-  margin-bottom: 0;
-}
-
-body {
-  overflow-x: hidden;
 }
